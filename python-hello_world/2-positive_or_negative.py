@@ -1,8 +1,15 @@
 import random
 number = random.randint(-10, 10)
+
+print(number, end=' ')
+
+# YOUR CODE HERE
 if number > 0:
-    print(number, "is positive")
-if number == 0:
-    print(number, "is zero")
-if number < 0:
-    print(number, "is negative")
+    print("is positive")
+elif number == 0:
+    print("is zero")
+else:
+    print("is negative")
+
+
+
