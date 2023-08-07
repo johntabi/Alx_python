@@ -1,7 +1,5 @@
-def add(a, b):
-    return a + b
-
-#add = __import__('0-sum').add
-
-#print(add(1, 2))
-##print(add(100, -2))
+#!/usr/bin/python3
+def square_matrix_simple(matrix=[]):
+    if not matrix:
+        print()
+    return [[element * element for element in row] for row in matrix]

@@ -1,6 +1,4 @@
+#!/usr/bin/python3
 if __name__ == "__main__":
-    try:
-        import variable_load_2
-        print(variable_load_2.a)
-    except AttributeError:
-        print("a missing")
+    from variable_load_2 import a
+    print(a)

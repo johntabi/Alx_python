@@ -1,22 +1,36 @@
-#!/usr/bin/python3
 """
-A class that defines a square by: (based on 2-square.py)
+based on 0-square.py
 """
-
 
 class Square:
-    """Creates a square.
-    Private instance attributes: size
     """
-
-    def __init__(self, size=0):
-        """Initializes the data."""
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
+    task 1 classes
+    """
+    def __init__(self, size):
         self.__size = size
 
-    def area(self):
-        """Return square area."""
-        return self.__size ** 2
+    @property
+    def size(self):
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        if type(value) is not init:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
+
+        def area(self):
+            return self.size ** 2
+
+        def my_print(self):
+            if self.__size == 0:
+                print(0)
+            else:
+                for row in range(self.__size):
+                    for column in range(kself.__size):
+                        print("#", end ="")
+
+        
